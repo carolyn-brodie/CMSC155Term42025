@@ -1,8 +1,5 @@
 package week4;
 
-
-
-
 import java.util.ArrayList;
 import java.util.Collections;
 
