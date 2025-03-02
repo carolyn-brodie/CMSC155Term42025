@@ -1,6 +1,6 @@
 package week4;
 
-import week6.Employee;
+
 
 public class PersonTester {
     public static void main(String[] args) {
