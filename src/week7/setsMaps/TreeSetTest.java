@@ -14,6 +14,7 @@ public class TreeSetTest {
 		names.add("Drake");
 		names.add("Bob");
 		names.add("Aiden");
+		names.add("Drake");
 
 		
 		System.out.println(names);
@@ -29,9 +30,9 @@ public class TreeSetTest {
 		
 		 
 //		
-//		for (String element : names) {
-//			System.out.println(element);
-//		}
+		for (String element : names) {
+			System.out.println(element);
+		}
 
 	}
 

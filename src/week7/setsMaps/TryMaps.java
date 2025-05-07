@@ -4,24 +4,22 @@ package week7.setsMaps;
  * Created by Owner on 3/30/2017.
  */
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class TryMaps {
 
     public static void main(String[] args) {
        Map<String, Integer> test = new HashMap<>();
 		test.put("A",1);
-		test.put("B",2);
+//		test.put("B",2);
 //		System.out.println(test);
 //
-//		test.put("A",2);
-//		test.put("C",3);
+		test.put("A",2);
+		test.put("C",3);
 //		System.out.println(test);
 //
 ////
-//        //System.out.println(test.get("B"));
+//        System.out.println(test.get("B"));
 ////
 //		for (String key : test.keySet())
 //			System.out.println(key + " " + test.get(key));
@@ -32,25 +30,26 @@ public class TryMaps {
 //            System.out.println(pair.getKey() + " = " + pair.getValue());
 //        }
 //////
-////		test.remove("A");
-////		System.out.println(test);
+//		test.remove("A");
+//		System.out.println(test);
+////////
+//		test.put("A", 8);
+//		System.out.println(test); // order of elements not guaranteed
 //////
-////		test.put("A", 8);
-////		System.out.println(test); // order of elements not guaranteed
+//        System.out.println(test.get("B") + test.get("C"));
 //////
-////        System.out.println(test.get("B") + test.get("C"));
-//////
-//////     System.out.println(test.get("D")); // result is null
+//     System.out.println(test.get("D")); // result is null
 //////
 ////         System.out.println(test.get(2));
 //////     // result is null - not an error, even though 5 is the wrong key type!
 //////
-//////        System.out.println(test.get("B") + test.get("D")); // run-time error
+//        System.out.println(test.get("B") + test.get("D")); // run-time error
 //////
 ////        if (test.containsKey("D")) System.out.println(test.get("D")); // no output
 //////
 //		String key1 = "D"; // repeat above example but don't duplicate "D".
-//        if (test.containsKey(key1)) System.out.println(test.get(key1)); // no output
+//        if (test.containsKey(key1))
+//			System.out.println(test.get(key1)); // no output
 //        String key2 = "A";
 //        if (test.containsKey(key2)) System.out.println(test.get(key2));
 //
@@ -70,7 +69,7 @@ public class TryMaps {
 //		hashmap.put("bird", 2);
 //		hashmap.put("spider", 8);
 //		System.out.println(hashmap);  // Order not guaranteed
-//
+////
 //		hashmap.remove("fish");
 //		hashmap.put("fish", 0);
 //		System.out.println(hashmap);  // Order MAY CHANGE.
@@ -83,7 +82,7 @@ public class TryMaps {
 //		linkedHashmap.put("bird", 2);
 //		linkedHashmap.put("spider", 8);
 //		System.out.println(linkedHashmap);  // Elements are in same order as inserted.
-//
+////
 //		linkedHashmap.remove("fish");
 //		linkedHashmap.put("fish", 0);
 //		System.out.println(linkedHashmap);  // Order has changed: fish is last

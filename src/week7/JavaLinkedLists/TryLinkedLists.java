@@ -13,12 +13,16 @@ public class TryLinkedLists {
         lst.add(100.4);
         lst.add(2.6);
         System.out.println(lst);
+        lst.set(0, 400.4);
+        lst.add(1, 500.5);
+        System.out.println(lst);
         System.out.println("Size of list is " + lst.size());
 
         for (int count = 0; count < lst.size(); count++) {
             System.out.print(lst.get(count) + " ");
         }
         System.out.println();
+
         for (Double item: lst) {
             System.out.print(item + " ");
         }
@@ -33,15 +37,15 @@ public class TryLinkedLists {
         }
         System.out.println();
         System.out.println("total = " + total );
-//        while (iter.hasPrevious()) {
-//            System.out.print(iter.previous() + " ");
-//        }
+        while (iter.hasPrevious()) {
+            System.out.print(iter.previous() + " ");
+        }
     }
 
     public static void main(String[] args) {
         List<Double> theList1 = new LinkedList<>();
         List<Double> theList2 = new ArrayList<>();
         addNumber(theList1);
-        addNumber(theList2);
+//        addNumber(theList2);
     }
 }

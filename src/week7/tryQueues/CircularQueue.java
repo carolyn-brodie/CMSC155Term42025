@@ -19,14 +19,35 @@ public class CircularQueue {
 	
 	public void enqueue(String item) 
 	{
+		if (count < theQueue.length) {
+			theQueue[tail] = item;
+			count++;
+			if (tail < theQueue.length-1) {
+				tail++;
+			} else {
+				tail = 0;
+			}
 
+		} else {
+			System.out.println("Queue full");
+		}
 
 	}
 	
 
 	public String dequeue() 
 	{
-		String out = "";
+		String out = null;
+		if (count > 0) {
+			out = theQueue[head];
+			count--;
+			if (head < theQueue.length-1) {
+				head++;
+			} else {
+				head = 0;
+			}
+
+		}
 
 		return out;
 	}
@@ -34,12 +55,17 @@ public class CircularQueue {
 	
 	public String peek()
 	{
-		return "";
+	    String out = null;
+		if (count > 0) {
+			out = theQueue[head];
+		}
+		return out;
 	}
 
 
 	public void justArray(){
-        System.out.println(Arrays.toString(theQueue));
+
+		System.out.println(Arrays.toString(theQueue));
     }
 	
 	public String toString()

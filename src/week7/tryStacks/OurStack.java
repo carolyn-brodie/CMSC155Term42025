@@ -14,19 +14,32 @@ public class OurStack {
     }
 
     public void push(String item) {
-         elements[size] = item;
-         size++;
+        if (size >= elements.length) {
+            increaseCapacity();
+        }
+        elements[size] = item;
+        size++;
+
     }
 
     public String pop() {
-        String top = elements[size-1];
-        size--;
+        String top;
+        if (size > 0) {
+            top = elements[size - 1];
+            size--;
+        } else {
+            top = null;
+        }
         return top;
     }
 
     public String peek() {
-        String top = "";
-        return top;
+        if (size > 0) {
+            String top = elements[size - 1];
+            return top;
+        } else {
+            return null;
+        }
     }
 
     private void increaseCapacity() {

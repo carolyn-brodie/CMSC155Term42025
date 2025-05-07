@@ -22,8 +22,8 @@ public class WriteToFile {
 
         PrintWriter out = new PrintWriter ("out.txt");
 
-        out.println (one);
-        out.println (two);
+        out.println (one + "A");
+        out.println (two + "B");
         out.close ();
 
     }
@@ -31,8 +31,8 @@ public class WriteToFile {
 
     public static void main(String[] args) {
         try {
-            writeString ("Line 1", "Line 2");
-          //  appendString ("Here is more");
+            //writeString ("Line 1", "Line 2");
+            appendString ("Here is more");
         } catch (IOException exception) {
             System.out.println ("File Not Found " + exception);
         }

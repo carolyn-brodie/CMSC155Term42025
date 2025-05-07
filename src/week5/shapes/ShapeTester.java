@@ -11,8 +11,8 @@ public class ShapeTester {
 
         return largestSquare;
     }
-
-    //find biggest triangle
+//
+//    //find biggest triangle
     public static Triangle findBiggestTriangle(Triangle[] triangles){
         Triangle largestTriangle = triangles[0];
 
@@ -22,10 +22,10 @@ public class ShapeTester {
 
         return largestTriangle;
     }
-
-    //find biggest circle
-
-    //find biggest shape
+//
+//    //find biggest circle
+//
+//    //find biggest shape
     public static Shape findBiggest(Shape[] shapes){
         Shape largest = shapes[0];
 
@@ -37,15 +37,21 @@ public class ShapeTester {
     }
 
     public static void main(String[] args) {
-        Square[] arrayOfSquares =
-                {new Square(2), new Square(5), new Square(3)};
-        System.out.println(findBiggestSquare(arrayOfSquares));
-        Triangle[] arrayOfTriangle =
-                {new Triangle(2,4), new Triangle(5,1), new Triangle(3,2)};
-        System.out.println(findBiggestTriangle(arrayOfTriangle));
+//        Square[] arrayOfSquares =
+//                {new Square(2), new Square(5), new Square(3)};
+//        System.out.println(findBiggestSquare(arrayOfSquares));
+//        Triangle[] arrayOfTriangle =
+//                {new Triangle(2,4), new Triangle(5,1), new Triangle(3,2)};
+//        System.out.println(findBiggestTriangle(arrayOfTriangle));
+
         Shape[] arrayOfShapes =
                 {new Square(3), new Triangle(1,2), new Circle(4)};
         System.out.println(findBiggest(arrayOfShapes));
+
+//        Shape x = new Circle(3);
+//        System.out.println(Shape.QUARTER);
+        System.out.println(Shape.multiply(5,10));
+
 
     }
 

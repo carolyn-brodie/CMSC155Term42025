@@ -8,7 +8,7 @@ public class doWhileOnce {
             System.out.println("Inside while loop");
             x++;
         }
-
+        x = 10;
         System.out.println("after while loop");
         do {
             System.out.println("Inside do loop");

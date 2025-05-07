@@ -8,6 +8,6 @@ public class ComparingStrings {
         //when comparing strings, a negative means s1 comes before s2
         //a positive means s2 comes before s1
         //zero means they are the same
-        System.out.println(s1.compareTo("s2"));
+        System.out.println(s1.compareTo("s2") < 0);
     }
 }

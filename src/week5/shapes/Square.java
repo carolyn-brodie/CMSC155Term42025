@@ -7,6 +7,7 @@ public class Square implements Shape {
 
     //constructor
     public Square(double side) {
+
         this.side = side;
     }
 

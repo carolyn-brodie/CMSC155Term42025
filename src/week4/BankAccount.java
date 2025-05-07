@@ -26,7 +26,17 @@ public class BankAccount implements Comparable<BankAccount>{
     }
 
     public int compareTo(BankAccount other) {
-       return 0;
+        if(this.owner.compareTo(other.owner) == 0) {
+            if (this.balance < other.balance) {
+                return -1;
+            } else if (this.balance > other.balance) {
+                return 1;
+            } else {
+                return 0;
+            }
+        } else {
+            return this.owner.compareTo(other.owner);
+        }
     }
 
     //other methods
@@ -64,21 +74,25 @@ public class BankAccount implements Comparable<BankAccount>{
 //                balance == otherAcct.balance;
 //    }
 
-//    @Override
-//    public boolean equals(Object obj) {
-//        if (obj instanceof BankAccount) {
-//            BankAccount otherAcct = (BankAccount) obj;
-//            return owner.equals(otherAcct.owner) &&
-//                    accountNum == otherAcct.accountNum &&
-//                    balance == otherAcct.balance;
-//        } else return false;
-//    }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof BankAccount) {
+            BankAccount otherAcct = (BankAccount) obj;
+            return owner.equals(otherAcct.owner) &&
+                    accountNum == otherAcct.accountNum &&
+                    balance == otherAcct.balance;
+        } else return false;
+    }
 
    // public BankAccount copy() {
 //        return new BankAccount(owner, accountNum, balance);
 //    }
 
+    public void doSomething() {
+        System.out.println("Bank - Something");
+    }
     //print methods
+    @Override
     public String toString() {
         String out = owner + " with account " + accountNum;
         out += " has balance " + balance;

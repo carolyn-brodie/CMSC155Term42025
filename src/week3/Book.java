@@ -25,6 +25,7 @@ public class Book {
     }
 
     public void changePrice(double newPrice) {
+
         price = newPrice;
     }
 

@@ -26,6 +26,7 @@ public class IteratingThruArrays {
         System.out.println(positiveFound);
 
         positiveFound = false;
+        //for item in lst:
         for (int item : arrayName) {
             if (item > 0) {
                 positiveFound = true;

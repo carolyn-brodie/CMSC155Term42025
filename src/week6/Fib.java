@@ -47,8 +47,8 @@ public class Fib {
         System.out.println(recursiveFib(fibNumber));
         postTime = System.currentTimeMillis();
         System.out.println("Recursive time taken is " + (postTime - preTime) + " milliseconds");
-//
-//        System.out.println("-------------------------------------------------------------------------------");
+
+        System.out.println("-------------------------------------------------------------------------------");
         preTime = System.currentTimeMillis();
         System.out.println(memoFib(fibNumber, new long[fibNumber+1]));
         postTime = System.currentTimeMillis();

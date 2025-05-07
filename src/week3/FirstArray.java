@@ -7,9 +7,13 @@ public class FirstArray {
 
         double[] temperatures = {2.3, 1.0,-4.2};
         int[] intArray = new int[4];
-        System.out.println(Arrays.toString(temperatures));
+//        System.out.println(Arrays.toString(temperatures));
+//        System.out.println(temperatures[1]);
         System.out.println(Arrays.toString(intArray));
         intArray[2] = 3;
         System.out.println(Arrays.toString(intArray));
+        for (int number: intArray) {
+            System.out.print(number + " ");
+        }
     }
 }

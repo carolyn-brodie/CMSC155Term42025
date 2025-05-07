@@ -4,7 +4,6 @@ public class TryHashFunctions {
 
     public static int simpleHashCode(String str) {
         int h = 0;
-
         for (int i = 0; i < str.length(); i++) {
             h += str.charAt(i);
         }
@@ -23,7 +22,7 @@ public class TryHashFunctions {
     public static void main(String[] args) {
         System.out.println("Simple hash for eat "  + simpleHashCode("eat"));
         System.out.println("Simple hash for tea "  + simpleHashCode("tea"));
-//
+////
         System.out.println("Better hash for eat " + betterHashCode("eat"));
         System.out.println("Better hash for tea " + betterHashCode("tea"));
     }

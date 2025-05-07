@@ -10,6 +10,8 @@ public class OurLinkedListTester {
         // create and test a linked list
         OurLinkedList list = new OurLinkedList();
         System.out.println("list is " + list);
+
+
 //
 ////        //list.insert(10,50);
 ////        //System.out.println(list);
@@ -23,21 +25,23 @@ public class OurLinkedListTester {
         list.addNode(6);
         System.out.println("list should be 4 2 7 71 6: " +  list); // 4 2 7 71 6
         System.out.println("Size is " + list.size());
+        System.out.println("-5th item: "+ list.getValue(-5));
+
+////
+        list.insert(3, 10);
+        System.out.println("list should be 4 2 7 10 71 6: " + list); // 4 2 7 10 71 6
+        list.insert(1, 100);
+        System.out.println("list should be 4 100 2 7 10 71 6: " + list); // 4 100 2 7 10 71 6
+        list.insert(0, 5);
+        System.out.println("list should be 5 4 100 2 7 10 71 6: " + list); // 5 4 100 2 7 10 71 6
+        list.insert(-2, -2);
+        System.out.println("list should be -2 5 4 100 2 7 10 71 6: " + list); // -2 5 4 100 2 7 10 71 6
 //
-//        list.insert(3, 10);
-//        System.out.println("list should be 4 2 7 10 71 6: " + list); // 4 2 7 10 71 6
-//        list.insert(1, 100);
-//        System.out.println("list should be 4 100 2 7 10 71 6: " + list); // 4 100 2 7 10 71 6
-//        list.insert(0, 5);
-//        System.out.println("list should be 5 4 100 2 7 10 71 6: " + list); // 5 4 100 2 7 10 71 6
-//        list.insert(-2, -2);
-//        System.out.println("list should be -2 5 4 100 2 7 10 71 6: " + list); // -2 5 4 100 2 7 10 71 6
+        list.insert(500, -4);
+        System.out.println("list should be -2 5 4 100 2 7 10 71 6 -4: " + list); // -2 5 4 100 2 7 10 71 6 -4
 //
-//        list.insert(500, -4);
-//        System.out.println("list should be -2 5 4 100 2 7 10 71 6 -4: " + list); // -2 5 4 100 2 7 10 71 6 -4
-//
-//        list.addNode(1000);
-//        System.out.println("list should be -2 5 4 100 2 7 10 71 6 -4 1000: " + list); // -2 5 4 100 2 7 10 71 6 -4 1000
+        list.addNode(1000);
+        System.out.println("list should be -2 5 4 100 2 7 10 71 6 -4 1000: " + list); // -2 5 4 100 2 7 10 71 6 -4 1000
 //        list.remove(-3);
 //        System.out.println("list should be 5 4 100 2 7 10 71 6 -4 1000: " + list); // 5 4 100 2 7 10 71 6 -4 1000
 ////

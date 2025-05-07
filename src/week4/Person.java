@@ -17,10 +17,12 @@ public abstract class Person {
     public abstract String formatAddress();
 
     public String getAddress() {
+
         return address;
     }
 
     public String toString() {
+
         return name + " with phone " + phone + " and address " + address;
     }
 }

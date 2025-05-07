@@ -6,7 +6,7 @@ public class FirstWhile {
         int x = 10;
         while (x < 12) {
             System.out.println(x);
-            x +=1;
+//            x++;
         }
     }
 }
